@@ -70,11 +70,17 @@ body {
   margin-top: -100px;
 }
 
-.main .backThisProject {
+.main .backThisProject,
+.main .backedRange,
+.main .aboutProject {
   background: #fff;
-  padding: 50px;
-  margin-top: -30px;
+  padding: 50px 30px;
   border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.main .backThisProject {
+  margin-top: -30px;
 }
 .backThisProject h1 {
   font-size: 2rem;
@@ -93,8 +99,89 @@ body {
 .buttons__bookmark {
   background: transparent;
   border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 .buttons__bookmark img {
   width: 80px;
+}
+.backedRange h2 {
+  font-size: 3rem;
+}
+
+.backedRange hr {
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  margin-top: 30px;
+}
+.backedRange .backedRange__range {
+  margin-top: 30px;
+}
+
+.backedRange__range input[type="range"] {
+  width: 100%;
+}
+
+.main .aboutProject {
+  text-align: left;
+}
+.aboutProject h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.aboutProject__cards {
+  margin-top: 50px;
+}
+
+.aboutProject__cards .card {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  padding: 50px 30px;
+  margin-bottom: 20px;
+}
+
+.aboutProject__cards .card h4 {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+.aboutProject__cards .card h4 > span {
+  color: var(--primaryColor);
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-top: 8px;
+}
+
+.aboutProject__cards .card p {
+  margin-bottom: 30px;
+}
+.aboutProject__cards .card .card__button p {
+  display: flex;
+  align-items: center;
+}
+.aboutProject__cards .card .card__button span {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #000;
+  margin-right: 5px;
+}
+
+.aboutProject__cards .card .card__button button {
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 1rem;
+}
+
+.aboutProject__cards .outOfStock {
+  opacity: 0.4;
+}
+
+.aboutProject__cards .outOfStock button {
+  background: var(--darkGrayColor);
 }
